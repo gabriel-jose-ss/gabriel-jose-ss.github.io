@@ -1,0 +1,12 @@
+h1{font-family: monospace;
+    color: rgba(170, 13, 13, 0.808);}
+    h2{font-family: Arial, Helvetica, sans-serif;}
+    body{
+    background-color: black;}
+    h2, p, ul {
+        color: white;
+    }
+    .link{
+        text-decoration: none;
+        color: rgb(24, 90, 15);
+    }
