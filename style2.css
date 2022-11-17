@@ -10,3 +10,12 @@ h1{font-family: monospace;
         text-decoration: none;
         color: rgb(24, 90, 15);
     }
+    .item1{
+color: yellow;
+    }
+    .item2{
+color: blueviolet;
+    }
+    .item3{
+color: rgba(30, 30, 190, 0.945);
+    }
