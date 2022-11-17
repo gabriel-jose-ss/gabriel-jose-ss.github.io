@@ -19,3 +19,8 @@ color: blueviolet;
     .item3{
 color: rgba(30, 30, 190, 0.945);
     }
+    .img {
+        width: 400px;
+        border-radius: 90%;
+
+    }
