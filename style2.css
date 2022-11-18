@@ -29,3 +29,17 @@ color: rgba(30, 30, 190, 0.945);
         border-radius: 90%;
 
     }
+    .logo {
+        border-radius: 50%;
+        width: 50px;
+    }
+    .instagram {
+font-size: 50px;
+text-decoration: none;
+
+    }
+
+     .logo, .instagram {
+        display: inline-flex;
+        
+    }
