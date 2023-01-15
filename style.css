@@ -1,0 +1,106 @@
+#title{
+    text-align: center;
+    color: rgba(139, 42, 12, 0.966);
+    font-family: "Audiowide", sans-serif;
+    }
+  
+    #color-palette{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+  
+    .color {
+      width: 40px;
+      height: 40px;
+      border: 1px solid black;
+      cursor: pointer; 
+      margin: 5px;
+    }
+  
+    #color-1 {
+      background-color: black;
+    }
+  
+    #color-2 {
+      background-color: green;
+    }
+  
+    #color-3 {
+      background-color: red;
+    }
+    
+    #color-4 {
+      background-color: blue
+    }
+  
+    #pixel-board{
+      width: 212px;
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    }
+  
+    .pixels2{
+      border: solid black 1px;
+      max-height: 40px;
+      height: 40px;
+    }
+    
+    .pixel{
+      border: solid black 1px;
+      height: 40px;
+      width: 40px;
+     display: inline-block;
+     background-color: white;
+    }
+    #buttons{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 11px;
+    }
+    
+    .button {
+      box-sizing: border-box;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      background-color: transparent;
+      border: 2px solid #e74c3c;
+      border-radius: 0.6em;
+      color: #e74c3c;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1;
+      margin: 5px;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    .button:hover, .button:focus {
+      color: rgb(199, 182, 25);
+      outline: 0;}
+  
+      .button {
+        border-color: #3498db;
+        color: #fff;
+        box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+      }
+      .button:hover {
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+      }
