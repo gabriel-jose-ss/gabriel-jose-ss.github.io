@@ -116,4 +116,3 @@ window.onload = () => {
   colored();
   clear();
 };
-
