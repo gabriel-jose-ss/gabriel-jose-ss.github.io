@@ -117,32 +117,3 @@ window.onload = () => {
   clear();
 };
 
-// eslint-disable-next-line max-lines-per-function, complexity
-const createBlock = () => {
-  if (input.value === '') {
-    alert('Board invalido!');
-  }
-  if (input.value < 5) {
-    input.value = 5;
-  }
-  if (input.value > 50) {
-    input.value = 50;
-  }
-  const numeroDePixels = input.value * input.value;
-  pixelsBoard.style.width = `${input.value * 42}px`;
-  const pixels = document.querySelectorAll('.pixel');
-  if (pixels.length !== 0) {
-    for (let index = 0; index < pixels.length; index += 1) {
-      pixelsBoard.removeChild(pixels[index]);
-    }
-  }
-  for (let lines = 1; lines <= numeroDePixels; lines += 1) {
-    const pixel = document.createElement('div');
-    pixel.className = 'pixel';
-    pixelsBoard.appendChild(pixel);
-  }
-
-  generateTabel();
-};
-
-buttonBoard.addEventListener('click', createBlock);
