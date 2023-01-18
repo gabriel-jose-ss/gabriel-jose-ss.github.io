@@ -1,7 +1,10 @@
-#title{
+body{
+  background-image: url(/Img/WhatsApp\ Image\ 2023-01-14\ at\ 10.43.18.jpeg);
+  background-size: 100%;
+}
+  #title{
     text-align: center;
     color: rgba(139, 42, 12, 0.966);
-    font-family: "Audiowide", sans-serif;
     }
   
     #color-palette{
@@ -14,8 +17,16 @@
       width: 40px;
       height: 40px;
       border: 1px solid black;
-      cursor: pointer; 
+      transition: all 0.5s;
+      cursor: pointer;
       margin: 5px;
+    }
+  
+    .color:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-filter: drop-shadow(15px 10px);
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,8));
     }
   
     #color-1 {
@@ -33,9 +44,11 @@
     #color-4 {
       background-color: blue
     }
-  
+    #color-5 {
+      background-color: white;
+    }
     #pixel-board{
-      width: 212px;
+      width: 422px;
     border: 3px solid black;
     margin-left: auto;
     margin-right: auto;
@@ -91,7 +104,7 @@
       font-weight: 700;
     }
     .button:hover, .button:focus {
-      color: rgb(199, 182, 25);
+      color: rgb(173, 14, 14);
       outline: 0;}
   
       .button {
@@ -104,3 +117,8 @@
       .button:hover {
         box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
       }
+      .img {
+        width: 50px;
+        margin-top: 10px;
+      }
+      
