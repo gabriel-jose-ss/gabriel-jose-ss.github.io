@@ -1,6 +1,7 @@
 body{
   background-image: url(/Img/WhatsApp\ Image\ 2023-01-14\ at\ 10.43.18.jpeg);
-  background-size: 100%;
+  background-origin: border-box;
+  background-size: 100%
 }
   #title{
     text-align: center;
