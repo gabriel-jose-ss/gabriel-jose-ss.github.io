@@ -23,12 +23,6 @@ body{
       margin: 5px;
     }
   
-    .color:hover{
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-filter: drop-shadow(15px 10px);
-  filter: drop-shadow(15px 10px 5px rgba(0,0,0,8));
-    }
   
     #color-1 {
       background-color: black;
