@@ -15,10 +15,10 @@ function generateColorAleatory() {
 
 const generateTabel = () => {
   const tablePixel = document.querySelector('#pixel-board');
-  for (let index = 0; index < 10; index += 1) {
+  for (let index = 0; index < 11; index += 1) {
     const lines = document.createElement('div');
     lines.className = 'pixels2';
-    for (let index2 = 0; index2 < 10; index2 += 1) {
+    for (let index2 = 0; index2 < 11; index2 += 1) {
       const cells = document.createElement('div');
       cells.className = 'pixel';
       lines.appendChild(cells);
