@@ -15,10 +15,10 @@ function generateColorAleatory() {
 
 const generateTabel = () => {
   const tablePixel = document.querySelector('#pixel-board');
-  for (let index = 0; index < 5; index += 1) {
+  for (let index = 0; index < 10; index += 1) {
     const lines = document.createElement('div');
     lines.className = 'pixels2';
-    for (let index2 = 0; index2 < 5; index2 += 1) {
+    for (let index2 = 0; index2 < 10; index2 += 1) {
       const cells = document.createElement('div');
       cells.className = 'pixel';
       lines.appendChild(cells);
@@ -37,8 +37,9 @@ const salvegeColor = () => {
 const paintColor = () => {
   const colorBox = document.querySelectorAll('.color');
   for (let index = 0; index < colorBox.length; index += 1) {
-    if (colorBox[index] === colorBox[0]) {
-      colorBox[index].style.backgroundColor = 'black';
+    if (colorBox[index] === colorBox[0] || colorBox[index] === colorBox[4]) {
+      colorBox[0].style.backgroundColor = 'black';
+      colorBox[4].style.backgroundColor = 'white';
     } else {
       colorBox[index].style.backgroundColor = generateColorAleatory();
     }
