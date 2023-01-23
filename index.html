@@ -1,43 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <title>Pixel Art</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trybewarts</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
-    <body>
-        <header><h1 id="title">Paleta de Cores</h1></header>
-       <main>
-        <div id="color-palette">
-          <div class="color selected" id="color-1"></div>
-          <div class="color" id="color-2"></div>
-          <div class="color" id="color-3"></div>
-          <div class="color" id="color-4"></div>
-          <div id="color-5" class="color"></div>
-        </div>
-        <div id="buttons"><button id="button-random-color" class="button">Cores aleatórias</button>
-        <button id="clear-board" class="button">Limpar</button>
-      </div>
-<div><input type="number" value="" id="board-size" min="1" max="50">
-<button id="generate-board">VQV</button>
-</div>
-        <div id="pixel-board"></div>
-          <script src="/script.js"></script>
-        </main>
-        <footer><img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          <img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          <img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          <img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          
-          <img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          <img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          <img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          <img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt=""><img class="img" src="/Img/pngaaa.com-4777619.png" alt="">
-          
-        
-        </footer>
-        </body>
+
+<body>
+
+    <header class="header">
+        <img src="./images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="logo Trybewarts" />
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form class="trybewarts-login" action="">
+            <input name="email" placeholder="Email" id="email" action="" />
+            <input type="password" name="password" placeholder="Senha" action="" id="password" />
+            <button type="submit" id="btn-login">Entrar</button>
+        </form>
+    </header>
+    <main class="main">
+
+        <form class="needs-validation" id="evaluation-form" novalidate>
+            <div class="form-row ">
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" id="input-name" placeholder="Nome" id="input-name" required>
+
+                </div>
+                <div class="col-md-4 mb-3">
+
+                    <input type="text" class="form-control" id="input-lastname" placeholder="Sobrenome" id="input-lastname" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class=" col-md-4 mb-3">
+                    <input type="text" class="form-control" id="input-email" placeholder="Email" id="input-email" aria-describedby="inputGroupPrepend" required>
+
+                </div>
+                <select id="house" class="col-md-4 mb-3">
+                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
+
+            </div>
+
+            <label for="" id="label-family">Qual sua família?</label>
+            <label for=""><input type="radio" name="family" value="Frontend">Frontend
+            </label>
+            <label for="">
+                <input type="radio" name="family" value="Backend">Backend
+            </label>
+            <label for="">
+                <input type="radio" name="family" value="FullStack">FullStack
+            </label>
+
+            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <label for="">
+                <input type="checkbox" class="subject" value="HoFs">HoFs
+            </label>
+
+            <label for="">
+                <input type="checkbox" class="subject" value="Jest">Jest
+            </label>
+
+            <label for="">
+                <input type="checkbox" class="subject" value="Promises">Promises
+            </label>
+
+            <label for="">
+                <input type="checkbox" class="subject" value="React">React
+            </label>
+
+            <label for="">
+                <input type="checkbox" class="subject" value="SQL">SQL
+            </label>
+
+            <label for="">
+                <input type="checkbox" class="subject" value="Python">Python
+            </label>
+            <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+            <label for="">
+                <input type="radio"
+                value="1" name="rate">1
+                <input type="radio"
+                value="2" name="rate">2
+                <input type="radio"
+                value="3" name="rate">3
+                <input type="radio"
+                value="4" name="rate">4
+                <input type="radio"
+                value="5" name="rate">5
+                <input type="radio"
+                value="6" name="rate">6
+                <input type="radio"
+                value="7" name="rate">7
+                <input type="radio"
+                value="8" name="rate">8
+                <input type="radio"
+                value="9" name="rate">9
+                <input type="radio"
+                value="10" name="rate">10
+                </label>
+            <label for="" class="textarea">Deixe seu comentário:</label>
+            <textarea name="" cols="20" rows="10" maxlength="500">
+
+</textarea>
+            <div class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label" for="invalidCheck">
+                        Você concorda com o uso das informações acima?
+                </label>
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+
+
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+
+
+
+        <img src="images/trybewarts-colored.svg" alt="Logo colorido da Trybewarts" id="trybewarts-forms-logo">
+    </main>
+    <footer class="footer">Direitos reservados à Trybewarts© </footer>
+</body>
+<script src="script.js"></script>
 </html>
