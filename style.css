@@ -1,119 +1,33 @@
-body{
-  background-image: url(/Img/WhatsApp\ Image\ 2023-01-14\ at\ 10.43.18.jpeg);
-  background-origin: border-box;
-  background-size: 100%
-}
-  #title{
-    text-align: center;
-    color: rgba(139, 42, 12, 0.966);
-    }
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
   
-    #color-palette{
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-    }
+  .title {
+    font-size: 24px;
+  }
   
-    .color {
-      width: 40px;
-      height: 40px;
-      border: 1px solid black;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-    }
+  .button-container {
+    margin-top: 20px;
+  }
   
+  .button {
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
   
-    #color-1 {
-      background-color: black;
-    }
+  .hidden {
+    display: none;
+  }
   
-    #color-2 {
-      background-color: green;
-    }
-  
-    #color-3 {
-      background-color: red;
-    }
-    
-    #color-4 {
-      background-color: blue
-    }
-    #color-5 {
-      background-color: white;
-    }
-    #pixel-board{
-      width: 464px;
-    border: 3px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    }
-  
-    .pixels2{
-      border: solid black 1px;
-      max-height: 40px;
-      height: 40px;
-    }
-    
-    .pixel{
-      border: solid black 1px;
-      height: 40px;
-      width: 40px;
-     display: inline-block;
-     background-color: white;
-    }
-    #buttons{
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 11px;
-    }
-    
-    .button {
-      box-sizing: border-box;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
-      background-color: transparent;
-      border: 2px solid #e74c3c;
-      border-radius: 0.6em;
-      color: #e74c3c;
-      cursor: pointer;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-align-self: center;
-          -ms-flex-item-align: center;
-              align-self: center;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1;
-      margin: 5px;
-      padding: 0.5em 1em;
-      text-decoration: none;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    .button:hover, .button:focus {
-      color: rgb(173, 14, 14);
-      outline: 0;}
-  
-      .button {
-        border-color: #3498db;
-        color: #fff;
-        box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-        -webkit-transition: all 150ms ease-in-out;
-        transition: all 150ms ease-in-out;
-      }
-      .button:hover {
-        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-      }
-      .img {
-        width: 50px;
-        margin-top: 10px;
-      }
-      
